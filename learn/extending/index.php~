@@ -1,0 +1,11 @@
+<?php
+
+require_once 'vendor/autoload.php';
+
+// Map your method
+Flight::map('hello', function($name){
+    echo "hello $name!";
+});
+
+// Call your custom method
+Flight::hello('Bob');
