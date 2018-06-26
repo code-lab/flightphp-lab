@@ -1,0 +1,15 @@
+<?php
+
+require "vendor/autoload.php";
+
+function hello(){
+  echo "Sayem vi ki obostha?";
+}
+
+
+Flight::route(
+  '/',
+  'hello'
+);
+
+Flight::start();
